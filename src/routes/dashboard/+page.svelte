@@ -51,3 +51,6 @@
   </div>
 </main>
 
+<svelte:head>
+  <title>Projets | Vice Code</title>
+</svelte:head>

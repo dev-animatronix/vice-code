@@ -20,7 +20,7 @@
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="h-12 w-full flex items-center justify-between px-4 overflow-visible">
-  <div class="flex-1">
+  <div>
     {#if project}
       <p class="text-xl">{project.name}</p>
     {:else}
