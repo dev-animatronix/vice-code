@@ -9,12 +9,14 @@
   let renamemodal;
   let success = false;
   let error = false;
+  let visible = true;
 
   const handleDeleteProject = async (id) => {
     try {
         await DeleteProject(id)
         projectToDelete = null;
         success = "Projet supprimé avec succès";
+        visible = false;
         setTimeout(() => {
             success = false;
         }, 3000);
@@ -73,7 +75,8 @@
 <!-- svelte-ignore a11y_missing_attribute -->
 <!-- svelte-ignore a11y_consider_explicit_label -->
 <!-- svelte-ignore a11y_no_noninteractive_tabindex -->
-
+ 
+{#if visible}
 <li class="list-row">
   <div class="text-lg align-middle">{project.name}</div>
   <div class="flex items-center space-x-4">
@@ -107,6 +110,7 @@
     </ul>
   </div>
 </li>
+{/if}
 
 <dialog bind:this={deletemodal} class="modal">
   <div class="modal-box w-75">
