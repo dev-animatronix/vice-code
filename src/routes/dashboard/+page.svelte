@@ -16,23 +16,11 @@
 
     try {
       projects = await ListProjects();
+      console.log(projects)
     } catch (e) {
       error = e.message;
     }
   });
-
-  async function handleDelete(id) {
-      event.preventDefault();
-      try {
-          await DeleteProject(id)
-          const user = await Me();
-          if (user) {
-              goto('/dashboard');
-          }
-      } catch (e) {
-          error = e;
-      }
-  }
 </script>
 
 <main class="min-h-screen flex justify-center pt-12">
@@ -45,14 +33,14 @@
           Aucun projet
         {/if}
       </h2>
-      <button class="btn btn-primary">
+      <button on:click={() => goto("/project")} class="btn btn-primary">
         + Créer un projet
       </button>
     </div>
     {#if error}
       <p class="text-red-600">{error}</p>
     {:else if projects && projects.projects}
-      <ul class="list bg-base-100 rounded-box shadow-md">
+      <ul class="list bg-base-100 rounded-box shadow-md border border-base-300">
         {#each projects.projects as project}
           <Item {project} />
         {/each}

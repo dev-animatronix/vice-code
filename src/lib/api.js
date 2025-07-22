@@ -143,7 +143,20 @@ export async function CreateProject(name, html = '', css = '', js = '') {
     },
     body: JSON.stringify({ name, html, css, js })
   });
-  if (!res.ok) throw new Error('Erreur création projet');
+
+  if (!res.ok) {
+    // Essaie de récupérer le message d'erreur précis
+    let errorMessage = await res.text();
+    try {
+      const data = JSON.parse(errorMessage);
+      errorMessage = data.error || errorMessage;
+    } catch {}
+
+    const error = new Error(errorMessage);
+    error.status = res.status;
+    throw error;
+  }
+
   return res.json();
 }
 
@@ -155,7 +168,14 @@ export async function GetProject(id) {
       'Authorization': `Bearer ${token}`
     }
   });
-  if (!res.ok) throw new Error('Erreur récupération projet');
+
+  if (!res.ok) {
+    const message = await res.text(); // ou `res.json()` si tu retournes du JSON
+    const error = new Error(message || 'Erreur récupération projet');
+    error.status = res.status;
+    throw error;
+  }
+
   return res.json();
 }
 
