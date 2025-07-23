@@ -11,7 +11,6 @@
       <style>${css}</style>
     </head>
     <body>
-      ${html}
       <script>
         // Essayer de capturer erreurs JS dans l'iframe (optionnel)
         window.onerror = function(message, source, lineno, colno, error) {
@@ -19,6 +18,7 @@
         };
       <\/script>
       <script>${js}<\/script>
+      ${html}
     </body>
     </html>
   `;

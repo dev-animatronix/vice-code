@@ -52,7 +52,6 @@
   }
 
   function saveProject() {
-    console.log('Sauvegarde', project.id, html, js, css, project.name );
     EditProject(project.id, html, js, css, project.name);
   }
 
