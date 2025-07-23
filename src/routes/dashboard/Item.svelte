@@ -78,7 +78,7 @@
  
 {#if visible}
 <li class="list-row">
-  <div class="text-lg align-middle">{project.name}</div>
+  <div class="text-lg align-middle m-0 flex items-center leading-normal">{project.name}</div>
   <div class="flex items-center space-x-4">
   {#if project.html?.trim()}
     <div class="badge badge-soft badge-html align-middle">HTML</div>

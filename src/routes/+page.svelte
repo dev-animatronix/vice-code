@@ -11,7 +11,7 @@
         <p class="py-6">
           Un éditeur HTML/CSS/JS en ligne, privé, sans pub, sans limites, et gratuit.
         </p>
-        <a href="/login" class="btn btn-primary">Commencer</a>
+        <a href="/register" class="btn btn-primary">Commencer</a>
       </div>
     </div>
   </div>
@@ -95,7 +95,7 @@
             </li>
           </ul>
           <div class="mt-6">
-            <a href="/login" class="btn btn-primary btn-block">C'est parti</a>
+            <a href="/register" class="btn btn-primary btn-block">C'est parti</a>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@
             </li>
           </ul>
           <div class="mt-6">
-            <a href="/login" class="btn btn-primary btn-block">Je veux ça !</a>
+            <a href="/register" class="btn btn-primary btn-block">Je veux ça !</a>
           </div>
         </div>
       </div>
@@ -154,7 +154,7 @@
             </li>
           </ul>
           <div class="mt-6">
-            <a href="/login" class="btn btn-primary btn-block">Je prend !</a>
+            <a href="/register" class="btn btn-primary btn-block">Je prend !</a>
           </div>
         </div>
       </div>
