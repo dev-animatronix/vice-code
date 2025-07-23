@@ -31,6 +31,7 @@ npm run dev
 
 Ce projet est mené en solo par passion.
 Tu veux aider, suggérer ou améliorer ?
+N’hésite pas à ouvrir une issue, proposer un pull request ou simplement me contacter !
 
 ---
 
