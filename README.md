@@ -35,4 +35,4 @@ N’hésite pas à ouvrir une issue, proposer un pull request ou simplement me c
 
 ---
 
-Made with ☕ and ❤️
+Made with ☕ and ❤️ … and a few whispers from ChatGPT.
