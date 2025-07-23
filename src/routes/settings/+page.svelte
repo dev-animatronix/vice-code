@@ -61,7 +61,7 @@
     }
 
     try {
-      const res = await RenameUser(trimmedName); // ✅ appel réel à l'API
+      const res = await RenameUser(trimmedName);
       success = res.message || 'Nom d’utilisateur mis à jour.';
       user.username = trimmedName;
       setTimeout(() => {

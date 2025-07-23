@@ -1,38 +1,37 @@
-# sv
+[![logo](https://raw.githubusercontent.com/dev-animatronix/vice-code/19636c8c76cd955564e12fd048eefbea50e49091/static/favicon.svg "logo")](http://https://raw.githubusercontent.com/dev-animatronix/vice-code/19636c8c76cd955564e12fd048eefbea50e49091/static/favicon.svg "logo")
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Un éditeur de code **HTML**, **CSS** et **JavaScript** en ligne **rapide**, **privé** et **gratuit**, avec aperçu en temps réel.
 
-## Creating a project
+## Fonctionnalités principales
 
-If you're seeing this, you've probably already done this step. Congrats!
+- 💸 **Gratuit** – Aucun abonnement, aucune pub, aucune limite.
+- 🛡️ **Privé** – Vos projets sont à vous uniquement, rien n’est partagé sans votre accord.
+- 🔓 **Libre** – Le code source est ouvert, transparent et modifiable.
+- ⚡ **Aperçu en temps réel** – Voyez les changements dès que vous tapez.
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 🛠️ Lancer le projet en local
 
 ```bash
+git clone https://github.com/dev-animatronix/vice-code.git
+cd vice-code
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## 🧪 Stack technique
 
-To create a production version of your app:
+* Svelte / SvelteKit (Vite)
+* TailwindCSS + DaisyUI
 
-```bash
-npm run build
-```
+## 📄 Licence
 
-You can preview the production build with `npm run preview`.
+![Static Badge](https://img.shields.io/badge/licence-_AGPL-violet)
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## 🤝 Contribuer
+
+Ce projet est mené en solo par passion.
+Tu veux aider, suggérer ou améliorer ?
+
+---
+
+Made with ☕ and ❤️
